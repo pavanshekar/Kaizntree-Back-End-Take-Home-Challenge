@@ -87,17 +87,27 @@ WSGI_APPLICATION = 'InventoryHub.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': env('DB_NAME'),
+#         'USER': env('DB_USER'),
+#         'PASSWORD': env('DB_PASSWORD'),
+#         'HOST': env('DB_HOST'),
+#         'PORT': env('DB_PORT'),
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd752d83a4tglca',  
-        'USER': 'fwphfgetvjnyuv',  
-        'PASSWORD': '9060410695221cf1c794e2ee23cbc7ad63a3e61dd3de99e390d8cdfe59c341f8',  
-        'HOST': 'ec2-44-215-1-253.compute-1.amazonaws.com',  
-        'PORT': '5432',  
+        'NAME': os.getenv('DB_NAME'),
+        'USER': os.getenv('DB_USER'),
+        'PASSWORD': os.getenv('DB_PASSWORD'),
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
     }
 }
-
 
 
 # Password validation
