@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'InventoryHub.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'inventoryhub_db',  
-        'USER': 'myappuser',  
-        'PASSWORD': 'password',  
-        'HOST': 'localhost',  
+        'NAME': 'd752d83a4tglca',  
+        'USER': 'fwphfgetvjnyuv',  
+        'PASSWORD': '9060410695221cf1c794e2ee23cbc7ad63a3e61dd3de99e390d8cdfe59c341f8',  
+        'HOST': 'ec2-44-215-1-253.compute-1.amazonaws.com',  
         'PORT': '5432',  
     }
 }
